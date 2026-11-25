@@ -1,0 +1,20 @@
+[project]
+name = "text-classifier"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "L-Raghav", email = "lraghav0509@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "polars>=2.2.0",
+    "scikit-learn>=1.9.1",
+]
+
+[project.scripts]
+text-classifier = "text_classifier:main"
+
+[build-system]
+requires = ["uv_build>=0.13.10,<0.14.0"]
+build-backend = "uv_build"
